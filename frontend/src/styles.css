@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #8f99a7;
+}
+
+.container {
+  width: 500px;
+  margin: 40px auto;
+  background: rgb(172, 173, 177);
+  padding: 30px;
+  border: 2px solid #2f80ed;
+  border-radius: 6px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #2f80ed;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #2f80ed;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.secondary {
+  background-color: #ccc;
+  color: black;
+}
+
+.card {
+  border: 1px solid #2f80ed;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.status-planned {
+  color: green;
+}
+
+.status-done {
+  color: blue;
+}
+
+nav {
+  background: #2f80ed;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
