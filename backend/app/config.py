@@ -11,9 +11,12 @@ class Settings:
     DB_USER = os.getenv("DB_USER")
     DB_PASSWORD = os.getenv("DB_PASSWORD")
 
-    SECRET_KEY = os.getenv("SECRET_KEY")
-    ALGORITHM = os.getenv("ALGORITHM")
+    SECRET_KEY = os.getenv("SECRET_KEY", "change-me-in-production")
+    ALGORITHM = os.getenv("ALGORITHM", "HS256")
     ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 60))
+
+    LLM_URL = os.getenv("LLM_URL")
+    LLM_MODEL = os.getenv("LLM_MODEL", "qwen")
 
     @property
     def DATABASE_URL(self):
